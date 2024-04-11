@@ -82,7 +82,7 @@
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
     "mobileBottomRow": 48,
-    "widgetName": "Table1",
+    "widgetName": "movies_table",
     "defaultPageSize": 0,
     "columnOrder": [
         "imdb_id",
@@ -124,9 +124,9 @@
     "primaryColumns": {
         "EditActions1": {
             "computedValue": "",
-            "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+            "saveButtonColor": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
             "discardIconAlign": "left",
-            "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+            "isSaveDisabled": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( !movies_table.updatedRowIndices.includes(currentIndex)))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "EditActions1",
@@ -146,7 +146,7 @@
             "allowCellWrapping": false,
             "index": 10,
             "isDiscardVisible": true,
-            "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+            "isDiscardDisabled": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( !movies_table.updatedRowIndices.includes(currentIndex)))}}",
             "isVisible": true,
             "label": "Save / Discard",
             "discardActionLabel": "Discard",
@@ -156,18 +156,18 @@
             "horizontalAlignment": "LEFT",
             "isCellEditable": false,
             "decimals": 0,
-            "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+            "saveBorderRadius": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
             "width": 150,
             "enableFilter": true,
             "sticky": "right",
             "saveIconAlign": "left",
             "originalId": "EditActions1",
-            "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+            "discardBorderRadius": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
             "currencyCode": "USD",
             "verticalAlignment": "CENTER"
         },
         "imdb_id": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"imdb_id\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"imdb_id\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "imdb_id",
@@ -198,7 +198,7 @@
             "verticalAlignment": "CENTER"
         },
         "title": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "title",
@@ -229,7 +229,7 @@
             "verticalAlignment": "CENTER"
         },
         "poster_path": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"poster_path\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"poster_path\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "poster_path",
@@ -260,7 +260,7 @@
             "verticalAlignment": "CENTER"
         },
         "release_data": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"release_data\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"release_data\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "release_data",
@@ -291,7 +291,7 @@
             "verticalAlignment": "CENTER"
         },
         "revenue": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"revenue\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "revenue",
@@ -322,7 +322,7 @@
             "verticalAlignment": "CENTER"
         },
         "release_date": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"release_date\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"release_date\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "release_date",
@@ -353,7 +353,7 @@
             "verticalAlignment": "CENTER"
         },
         "genres": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"genres\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"genres\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "genres",
@@ -384,7 +384,7 @@
             "verticalAlignment": "CENTER"
         },
         "vote_average": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vote_average\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vote_average\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "vote_average",
@@ -415,7 +415,7 @@
             "verticalAlignment": "CENTER"
         },
         "tagline": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tagline\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tagline\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "tagline",
@@ -446,7 +446,7 @@
             "verticalAlignment": "CENTER"
         },
         "_id": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "_id",
@@ -477,7 +477,7 @@
             "verticalAlignment": "CENTER"
         },
         "vote_count": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vote_count\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vote_count\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "vote_count",
@@ -508,7 +508,7 @@
             "verticalAlignment": "CENTER"
         },
         "homepage": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"homepage\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"homepage\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "homepage",
@@ -539,7 +539,7 @@
             "verticalAlignment": "CENTER"
         },
         "status": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
+            "computedValue": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
             "isEditable": true,
             "notation": "standard",
             "alias": "status",

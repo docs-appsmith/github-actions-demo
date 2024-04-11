@@ -41,16 +41,16 @@
         },
         "find": {
           "query": {
-            "data": "{{{ homepage: {$regex: Table1.searchText, '$options' : 'i'} }}}"
+            "data": "{{{ homepage: {$regex: movies_table.searchText, '$options' : 'i'} }}}"
           },
           "limit": {
-            "data": "{{Table1.pageSize}}"
+            "data": "{{movies_table.pageSize}}"
           },
           "sort": {
-            "data": "{{ Table1.sortOrder.column ? { [Table1.sortOrder.column]: Table1.sortOrder.order !== \"desc\" ? 1 : -1 } : {}}}"
+            "data": "{{ movies_table.sortOrder.column ? { [movies_table.sortOrder.column]: movies_table.sortOrder.order !== \"desc\" ? 1 : -1 } : {}}}"
           },
           "skip": {
-            "data": "{{Table1.pageOffset}}"
+            "data": "{{movies_table.pageOffset}}"
           }
         },
         "smartSubstitution": {
@@ -82,10 +82,10 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      " Table1.sortOrder.column ? { [Table1.sortOrder.column]: Table1.sortOrder.order !== \"desc\" ? 1 : -1 } : {}",
-      "Table1.pageOffset",
-      "Table1.pageSize",
-      "{ homepage: {$regex: Table1.searchText, '$options' : 'i'} }"
+      " movies_table.sortOrder.column ? { [movies_table.sortOrder.column]: movies_table.sortOrder.order !== \"desc\" ? 1 : -1 } : {}",
+      "movies_table.pageOffset",
+      "movies_table.pageSize",
+      "{ homepage: {$regex: movies_table.searchText, '$options' : 'i'} }"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

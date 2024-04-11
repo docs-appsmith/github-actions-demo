@@ -36,7 +36,7 @@
         },
         "count": {
           "query": {
-            "data": "{{{ homepage: {$regex: Table1.searchText} }}}"
+            "data": "{{{ homepage: {$regex: movies_table.searchText} }}}"
           }
         },
         "delete": {
@@ -75,7 +75,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "{ homepage: {$regex: Table1.searchText} }"
+      "{ homepage: {$regex: movies_table.searchText} }"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

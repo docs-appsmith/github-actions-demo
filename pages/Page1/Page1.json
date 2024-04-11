@@ -34,10 +34,10 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                " Table1.sortOrder.column ? { [Table1.sortOrder.column]: Table1.sortOrder.order !== \"desc\" ? 1 : -1 } : {}",
-                "Table1.pageSize",
-                "Table1.pageOffset",
-                "{ homepage: {$regex: Table1.searchText, '$options' : 'i'} }"
+                " movies_table.sortOrder.column ? { [movies_table.sortOrder.column]: movies_table.sortOrder.order !== \"desc\" ? 1 : -1 } : {}",
+                "movies_table.pageOffset",
+                "{ homepage: {$regex: movies_table.searchText, '$options' : 'i'} }",
+                "movies_table.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -49,7 +49,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "{ homepage: {$regex: Table1.searchText} }"
+                "{ homepage: {$regex: movies_table.searchText} }"
               ],
               "timeoutInMillisecond": 10000
             }

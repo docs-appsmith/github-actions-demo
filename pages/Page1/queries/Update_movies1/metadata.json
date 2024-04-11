@@ -15,6 +15,7 @@
     },
     "pageId": "Page1",
     "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -57,10 +58,10 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{_id: ObjectId('{{Table1.updatedRow._id}}')}"
+            "data": "{_id: ObjectId('{{movies_table.updatedRow._id}}')}"
           },
           "update": {
-            "data": "{{{$set: _.omit(Table1.updatedRow, \"_id\")}}}"
+            "data": "{{{$set: _.omit(movies_table.updatedRow, \"_id\")}}}"
           }
         }
       }
@@ -78,8 +79,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Table1.updatedRow._id",
-      "{$set: _.omit(Table1.updatedRow, \"_id\")}"
+      "movies_table.updatedRow._id",
+      "{$set: _.omit(movies_table.updatedRow, \"_id\")}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
